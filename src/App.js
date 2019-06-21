@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import RepoTable from "./components/repoTable";
+
+// I want to see all javascript repos with over 25k stars, sorted by most to least order
+// I want to see the name, number of stars, and a link to the repo
+// I want to know when the screen is loading
+// I want to know when I have an error
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RepoTable />;
 }
 
 export default App;
